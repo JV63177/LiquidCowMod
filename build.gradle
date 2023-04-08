@@ -1,13 +1,16 @@
 plugins {
+    id 'eclipse'
+    id 'maven-publish'
     id 'net.minecraftforge.gradle' version '5.1.+'
+    id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
 
-group = 'shitcraft.de'
-version = '1.0a'
+group = 'com.github.JV63177'
+version = '1.0a-1.19.2'
 
 java {
-    archivesBaseName = 'shitcraft.de'
+    archivesBaseName = 'liquidcowmod'
     toolchain.languageVersion = JavaLanguageVersion.of(17)
 }
 
@@ -25,7 +28,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.19.2'
+    mappings channel: 'parchment', version: '2022.11.27-1.19.2'
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
 
@@ -49,7 +52,7 @@ minecraft {
             property 'forge.logging.console.level', 'debug'
 
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
-            property 'forge.enabledGameTestNamespaces', 'shitcraft.de'
+            property 'forge.enabledGameTestNamespaces', 'liquidcowmod'
 
             mods {
                 liquidcowmod {
@@ -65,7 +68,7 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'shitcraft.de'
+            property 'forge.enabledGameTestNamespaces', 'liquidcowmod'
 
             mods {
                 liquidcowmod {
@@ -84,7 +87,7 @@ minecraft {
 
             property 'forge.logging.console.level', 'debug'
 
-            property 'forge.enabledGameTestNamespaces', 'shitcraft.de'
+            property 'forge.enabledGameTestNamespaces', 'liquidcowmod'
 
             mods {
                 liquidcowmod {
