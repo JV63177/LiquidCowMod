@@ -1,4 +1,7 @@
 {
   "item.liquidcowmod.cow_ingot": "Cow Ingot",
+
+  "block.liquidcowmod.cow_block": "Block of Cow",
+
   "itemGroup.liquid_cow_tab": "Liquid Cow Mod"
 }
